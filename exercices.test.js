@@ -17,14 +17,32 @@ describe('add function', () => {
 /**
  * Make a function that creates student object
  */
-describe('add function', () => {
-  it('some numbers', () => {
+describe('createStudent', () => {
+  it('some name', () => {
     const actualValue = answers.createStudent('George');
     expect(actualValue).toEqual({ name: 'George', grade: null, courses: [], isGraduated: false });
   });
-  it('some numbers part 2', () => {
+  it('some name part 2', () => {
     const actualValue = answers.createStudent('Lisa');
     expect(actualValue).toEqual({ name: 'Lisa', grade: null, courses: [], isGraduated: false });
+  });
+});
+
+/**
+ * Make a function that returns highest number in array
+ */
+describe.only('highestNumber', () => {
+  it('some numbers', () => {
+    const actualValue = answers.highestNumber([5, 50, 666, 30]);
+    expect(actualValue).toEqual(666);
+  });
+  it('some numbers part 2', () => {
+    const actualValue = answers.highestNumber([10000, 4, 44, 567]);
+    expect(actualValue).toEqual(10000);
+  });
+  it('without any numbers', () => {
+    const actualValue = answers.highestNumber([]);
+    expect(actualValue).toEqual(undefined);
   });
 });
 
