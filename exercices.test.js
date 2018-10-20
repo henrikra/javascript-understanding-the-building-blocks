@@ -15,7 +15,7 @@ describe('add function', () => {
 });
 
 /**
- * Make a function that creates student object
+ * Make a function that creates student object with name
  */
 describe('createStudent', () => {
   it('some name', () => {
@@ -53,7 +53,7 @@ describe('highestNumber', () => {
 /**
  * Make a function that check if given object has any value at given key
  */
-describe.only('hasValueAtKey', () => {
+describe('hasValueAtKey', () => {
   it('finds if key has value', () => {
     const actualValue = answers.hasValueAtKey({ name: 'Axel', heigh: 170 }, 'name');
     expect(actualValue).toEqual(true);
