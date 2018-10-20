@@ -76,6 +76,13 @@ describe('my callback', () => {
     expect(actualValue).toEqual(42);
   });
 
+  test('handles numbers with sum', () => {
+    const actualValue = answers.myCallback(() => {
+      return 22 + 33;
+    });
+    expect(actualValue).toEqual(55);
+  });
+
   test('handles strings', () => {
     const actualValue = answers.myCallback(() => {
       return 'You got this!';
