@@ -1,5 +1,9 @@
 const answers = require('./answers');
 
+/**
+ * Make a function that calls it's first argument which is a callback function
+ * and returns callback function's return value
+ */
 describe('my callback', () => {
   test('handles numbers', () => {
     expect(
@@ -8,6 +12,7 @@ describe('my callback', () => {
       })
     ).toEqual(42);
   });
+
   test('handles strings', () => {
     expect(
       answers.myCallback(() => {
@@ -17,6 +22,9 @@ describe('my callback', () => {
   });
 });
 
+/**
+ * Make you own implementation of map
+ */
 describe('my map function', () => {
   test('handles numbers', () => {
     expect(
@@ -38,6 +46,9 @@ describe('my map function', () => {
   });
 });
 
+/**
+ * Make your own implementation of filter
+ */
 describe('my filter function', () => {
   test('handles numbers', () => {
     expect(
