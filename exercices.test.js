@@ -1,6 +1,20 @@
 const answers = require('./answers');
 
 /**
+ * Make a function that adds two parameters together
+ */
+describe('add function', () => {
+  it('some numbers', () => {
+    const actualValue = answers.add(120, 66);
+    expect(actualValue).toEqual(186);
+  });
+  it('some numbers part 2', () => {
+    const actualValue = answers.add(71, 10);
+    expect(actualValue).toEqual(81);
+  });
+});
+
+/**
  * Make a function that calls it's first argument which is a callback function
  * and returns callback function's return value
  */
