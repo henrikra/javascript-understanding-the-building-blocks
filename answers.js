@@ -1,3 +1,3 @@
-const myMap = require('./myMap');
+const myMap = require('./answers/myMap');
 
 module.exports = { myMap };
