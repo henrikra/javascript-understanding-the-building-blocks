@@ -1,4 +1,4 @@
-const myMap = () => {
+const myMap = (myArray, callback) => {
   return null;
 };
 
