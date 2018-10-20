@@ -51,6 +51,20 @@ describe('highestNumber', () => {
 });
 
 /**
+ * Make a function that check if given object has any value at given key
+ */
+describe.only('hasValueAtKey', () => {
+  it('finds if key has value', () => {
+    const actualValue = answers.hasValueAtKey({ name: 'Axel', heigh: 170 }, 'name');
+    expect(actualValue).toEqual(true);
+  });
+  it('does not find if key is not there', () => {
+    const actualValue = answers.hasValueAtKey({ name: 'Axel', height: 170 }, 'age');
+    expect(actualValue).toEqual(false);
+  });
+});
+
+/**
  * Make a function that calls it's first argument which is a callback function
  * and returns callback function's return value
  */
