@@ -65,6 +65,20 @@ describe('hasValueAtKey', () => {
 });
 
 /**
+ * Make a function that censors bad words with 4 stars (****)
+ */
+describe('censorBadWords', () => {
+  it('some bad sentences', () => {
+    const actualValue = answers.censorBadWords('Hello you are fucking weird');
+    expect(actualValue).toEqual('Hello you are **** weird');
+  });
+  it('some bad sentences 2', () => {
+    const actualValue = answers.censorBadWords('You piece of shit go fuck your self!');
+    expect(actualValue).toEqual('You piece of **** go **** your self!');
+  });
+});
+
+/**
  * Make a function that calls it's first argument which is a callback function
  * and returns callback function's return value
  */
