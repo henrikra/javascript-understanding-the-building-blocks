@@ -1,5 +1,22 @@
 const answers = require('./answers');
 
+describe('my callback', () => {
+  test('handles numbers', () => {
+    expect(
+      answers.myCallback(() => {
+        return 42;
+      })
+    ).toEqual(42);
+  });
+  test('handles strings', () => {
+    expect(
+      answers.myCallback(() => {
+        return 'You got this!';
+      })
+    ).toEqual('You got this!');
+  });
+});
+
 describe('my map function', () => {
   test('handles numbers', () => {
     expect(
