@@ -31,7 +31,7 @@ describe('createStudent', () => {
 /**
  * Make a function that returns highest number in array
  */
-describe.only('highestNumber', () => {
+describe('highestNumber', () => {
   it('some numbers', () => {
     const actualValue = answers.highestNumber([5, 50, 666, 30]);
     expect(actualValue).toEqual(666);
@@ -39,6 +39,10 @@ describe.only('highestNumber', () => {
   it('some numbers part 2', () => {
     const actualValue = answers.highestNumber([10000, 4, 44, 567]);
     expect(actualValue).toEqual(10000);
+  });
+  it('handles negative numbers', () => {
+    const actualValue = answers.highestNumber([-10000, -4, -44, -567]);
+    expect(actualValue).toEqual(-4);
   });
   it('without any numbers', () => {
     const actualValue = answers.highestNumber([]);
