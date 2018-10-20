@@ -15,6 +15,20 @@ describe('add function', () => {
 });
 
 /**
+ * Make a function that creates student object
+ */
+describe('add function', () => {
+  it('some numbers', () => {
+    const actualValue = answers.createStudent('George');
+    expect(actualValue).toEqual({ name: 'George', grade: null, courses: [], isGraduated: false });
+  });
+  it('some numbers part 2', () => {
+    const actualValue = answers.createStudent('Lisa');
+    expect(actualValue).toEqual({ name: 'Lisa', grade: null, courses: [], isGraduated: false });
+  });
+});
+
+/**
  * Make a function that calls it's first argument which is a callback function
  * and returns callback function's return value
  */
