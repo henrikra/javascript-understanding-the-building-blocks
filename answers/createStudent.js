@@ -1,5 +1,10 @@
 const createStudent = name => {
-  return null;
+  return {
+    name: name,
+    grade: null,
+    courses: [],
+    isGraduated: false,
+  };
 };
 
 module.exports = createStudent;

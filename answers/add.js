@@ -1,5 +1,5 @@
 const add = (numberA, numberB) => {
-  return null;
+  return numberA + numberB;
 };
 
 module.exports = add;
