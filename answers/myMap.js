@@ -1,12 +1,10 @@
 const myMap = (myArray, callback) => {
-  const result = myArray.map(element => {
-  if (typeof element === 'number') {
-    return element * 2;
-  } else if (typeof element === 'object') {
-    return `${element.name} is ${element.age} years old`;
-  }
-  })
-return result;
+  var result = [];
+    for (i = 0; i < myArray.length; i++) {
+      var x = callback(myArray[i]);
+      result.push(x);
 };
+return result;
+}
 
 module.exports = myMap;
