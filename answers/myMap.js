@@ -1,5 +1,5 @@
 const myMap = (myArray, callback) => {
-  var result = [];
+  let result = [];
     for (let i = 0; i < myArray.length; i++) {
       var x = callback(myArray[i]);
       result.push(x);
