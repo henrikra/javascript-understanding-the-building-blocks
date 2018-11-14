@@ -1,5 +1,5 @@
 const myCallback = callback => {
-  return null;
+  return callback();
 };
 
 module.exports = myCallback;

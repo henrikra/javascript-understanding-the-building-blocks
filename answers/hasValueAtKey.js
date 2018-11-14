@@ -1,5 +1,6 @@
 const hasValueAtKey = (myObject, key) => {
-  return null;
+  const myObjectKeys = Object.keys(myObject);
+  return myObjectKeys.includes(key);
 };
 
 module.exports = hasValueAtKey;
